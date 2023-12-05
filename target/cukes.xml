@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="92.471">
+<testcase classname="Registrations" name="valid registrations" time="14.414">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.result&quot;}&#10;  (Session info: MicrosoftEdge=115.0.1901.188)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.6.0', revision: '79f1c02ae20'&#10;System info: os.name: 'Windows 11', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_351'&#10;Driver info: org.openqa.selenium.edge.EdgeDriver&#10;Command: [425cdd3435accefc0330de07a532c69b, findElement {using=class name, value=result}]&#10;Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.188, ms:edgeOptions: {debuggerAddress: localhost:8590}, msedge: {msedgedriverVersion: 115.0.1901.188 (b51b39339c4..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:8590/devtool..., se:cdpVersion: 115.0.1901.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 425cdd3435accefc0330de07a532c69b" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given navigate to url website...............................................passed
+When clicks registration button to go to register page......................passed
+And user select gender type.................................................passed
+And user enter first name "automation" and last name "tester"...............passed
+And user enter date of birth................................................passed
+And user enter email "test@example.com" field...............................passed
+And user fills Password fields "P@ssw0rd" "P@ssw0rd"........................passed
+And user clicks on register button..........................................passed
+Then success message is displayed...........................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".result"}
+  (Session info: MicrosoftEdge=115.0.1901.188)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.6.0', revision: '79f1c02ae20'
+System info: os.name: 'Windows 11', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [425cdd3435accefc0330de07a532c69b, findElement {using=class name, value=result}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 115.0.1901.188, ms:edgeOptions: {debuggerAddress: localhost:8590}, msedge: {msedgedriverVersion: 115.0.1901.188 (b51b39339c4..., userDataDir: C:\WINDOWS\SystemTemp\scope...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:8590/devtool..., se:cdpVersion: 115.0.1901.188, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 425cdd3435accefc0330de07a532c69b
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:541)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:365)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:357)
+	at org_examples.Pages.P00_Register.register_success_msg(P00_Register.java:44)
+	at org_examples.StepDef.TC00_Register.success_message_is_displayed(TC00_Register.java:62)
+	at ✽.success message is displayed(file:///C:/Users/DELL/OneDrive/Desktop/New%20Project%20Zeinab%20Salim/Zeinab_Final_Project/Zeinab_Final_Project/src/main/resources/Featuers/F00_Register.feature:12)
+]]></failure>
+</testcase>
+<testcase classname="Login_ user could login to the system with valid account" name="valid login" time="7.628">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter valid email and password.........................................passed
+And click on login button...................................................passed
+Then verify that user logged in successfully................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Login_ user could login to the system with valid account" name="invalid login" time="7.668">
+<system-out><![CDATA[Given navigate to url website...............................................passed
+And Go to login page........................................................passed
+When Enter invalid email and password.......................................passed
+And click on login button...................................................passed
+Then verify that user didn't logged in successfully.........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Currencies Feature" name="verify Euro Symbol (€) is shown on the 4 products displayed in Home page" time="8.417">
+<system-out><![CDATA[When User Select Euro currency from the dropdown list on the top left of home page.passed
+Then Euro Symbol (€) is shown on the 4 products displayed in Home page......passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search using product name or by SKU" name="user could search using product name" time="7.732">
+<failure message="The following asserts failed:&#10;&#9;expected [true] but found [false],&#10;&#9;expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[When User write product name "book" on Search Field and click on search button.passed
+Then All Products with product name "book" apears on the web page...........failed
+
+StackTrace:
+java.lang.AssertionError: The following asserts failed:
+	expected [true] but found [false],
+	expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at org_examples.StepDef.TC03_searchStepDef.all_products_with_product_name_apears_on_the_web_page(TC03_searchStepDef.java:56)
+	at ✽.All Products with product name "book" apears on the web page(file:///C:/Users/DELL/OneDrive/Desktop/New%20Project%20Zeinab%20Salim/Zeinab_Final_Project/Zeinab_Final_Project/src/main/resources/Featuers/F03_Search.feature:5)
+]]></failure>
+</testcase>
+<testcase classname="user could search using product name or by SKU" name="user could search using product name 2" time="7.194">
+<system-out><![CDATA[When User write product name "laptop" on Search Field and click on search button.passed
+Then All Products with product name "laptop" apears on the web page.........passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search using product name or by SKU" name="user could search using product name 3" time="6.782">
+<system-out><![CDATA[When User write product name "nike" on Search Field and click on search button.passed
+Then All Products with product name "nike" apears on the web page...........passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search using product name or by SKU" name="user could search using product by SKU" time="7.848">
+<system-out><![CDATA[When User write product "SCI_FAITH" on Search Field and click on search button.passed
+And User click on the product in search result..............................passed
+Then The product has the same "SCI_FAITH"...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search using product name or by SKU" name="user could search using product by SKU 2" time="7.848">
+<system-out><![CDATA[When User write product "APPLE_CAM" on Search Field and click on search button.passed
+And User click on the product in search result..............................passed
+Then The product has the same "APPLE_CAM"...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="user could search using product name or by SKU" name="user could search using product by SKU 3" time="7.511">
+<system-out><![CDATA[When User write product "SF_PRO_11" on Search Field and click on search button.passed
+And User click on the product in search result..............................passed
+Then The product has the same "SF_PRO_11"...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="From homepage user goto any random sub-category page from the 3 main categories contains sub-categories" name="From homepage user goto any random sub-category page from the 7 main categories contains sub-categories" time="8.84">
+<system-out><![CDATA[When From homepage user select random one of the seven main categories and select any sub-category if it exist.passed
+Then Check the page title(equal or contains) the one you get it while selecting random sub-category.passed
+]]></system-out>
+</testcase>
+</testsuite>

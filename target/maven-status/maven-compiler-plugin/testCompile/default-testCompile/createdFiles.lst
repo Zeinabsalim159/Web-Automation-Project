@@ -1,0 +1,10 @@
+org_examples\StepDef\TC00_Register.class
+org_examples\Pages\P01_Login.class
+org_examples\StepDef\Hooks.class
+org_examples\Pages\P02_homePage.class
+org_examples\StepDef\TC01_Login.class
+org_examples\Test_Runner\Runner.class
+org_examples\StepDef\TC03_searchStepDef.class
+org_examples\Pages\P00_Register.class
+org_examples\StepDef\TC02_currenciesStepDef.class
+org_examples\StepDef\TC04_hoverCategoriesStepDef.class

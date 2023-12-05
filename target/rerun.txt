@@ -1,0 +1,2 @@
+file:src/main/resources/Featuers/F03_Search.feature:8
+file:src/main/resources/Featuers/F00_Register.feature:3
